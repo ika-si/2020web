@@ -35,6 +35,10 @@
         myHeading.textContent = 'Mozilla はすばらしいよ、' + myName;
       }
       
+      myButton.onclick = function() {
+        setUserName();
+      }
+      
       let myImage = document.querySelector('img')
       
       myImage.onclick = function() {
@@ -44,10 +48,6 @@
         } else {
           myImage.setAttribute ('src','images/firefox-icon.png');
         }
-      }
-      
-      myButton.onclick = function() {
-        setUserName();
       }
       
     </script>
